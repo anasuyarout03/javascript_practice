@@ -1,0 +1,15 @@
+<script>
+    var employees = [
+        { empId: 101, name: "sachin", sal: 5000},
+        { empId: 102, name: "anu", sal: 6000},
+        { empId: 103, name: "arati", sal: 7000},
+        { empId: 104, name: "tapas", sal: 8000},
+        { empId: 105, name: "umesh", sal: 9000}
+    ];
+    console.log(employees);
+    console.log(employees.length);
+
+    for(emp of employees){
+        document.write(emp.empId + "---" + emp.name + "---" + emp.sal + "<br>");
+    }
+</script>

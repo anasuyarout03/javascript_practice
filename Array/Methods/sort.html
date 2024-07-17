@@ -1,0 +1,19 @@
+<script>
+    let arr1 = [10,20,30,40,50];
+    arr1.sort();
+    document.write(arr1);
+    document.write("<hr>");
+
+    let arr2 = ["tata","honda","maruti","hundai","toyota"];
+    arr2.sort();
+    document.write(arr2);
+    document.write("<hr>");
+
+    let arr3 = [10,50,78,12,-34,0,-12,90,34];
+    arr3.sort();         // Not Numeric sort - string sort
+    document.write(arr3);           // -12,-34,0,10,12,34,50,78,90
+    document.write("<hr>");
+
+    arr3.sort((a, b) => a - b);
+    document.write(arr3);               // -34,-12,0,10,12,34,50,78,90
+</script>

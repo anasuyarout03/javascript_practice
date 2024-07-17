@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            name = 'anu';
+            
+            let obj1 = {
+                name: 'sachin',
+                f1: function(){
+                    console.log(`Inside f1 my name is ${this.name}`);
+                    // this binding here
+                },
+                f2: () => {
+                    console.log(`inside f2 my name is ${this.name} `);
+                    //no this binding here
+                }
+            };
+            obj1.f1();
+            obj1.f2();
+        </script>
+    </body>
+</html>

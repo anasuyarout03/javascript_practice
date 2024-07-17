@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let employees = [
+                { eId: 101, name: 'sanjay', sal: 4000 },
+                { eId: 104, name: 'sanu', sal: 9000 },
+                { eId: 103, name: 'minu', sal: 6700 },
+                { eId: 102, name: 'anu', sal: 6000 },
+            ];
+
+            for(let emp of employees){
+                for(let key in emp){
+                    document.write(key + "-" + emp[key] + " ");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let arr = [10,15,12,20,18];
+            result1 = Math.max(arr);
+
+            // ES-5
+            result2 = Math.max.apply(null,arr);
+
+            // ES-6
+            result3 = Math.max(...arr);
+
+            console.log(result1);  // NaN
+            console.log(result2);   // 20
+            console.log(result3);   // 20
+
+        </script>
+    </body>
+</html>

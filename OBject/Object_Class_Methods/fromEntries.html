@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var emp = {
+                name: "sachin",
+                age: 35,
+                address: { street: "mumbai", city: "bang", pin: 75604 },
+                cars: ['tata','honda','maruti']
+            };
+
+            let myEntries = Object.entries(emp);
+            console.log(myEntries);   //[['name', 'sachin'],['age', 35],['address', { street: "mumbai", city: "bang", pin: 75604 }],[cars: ['tata','honda','maruti']]]
+
+            let empObj = Object.fromEntries(myEntries);
+            console.log(empObj);   // {name: 'sachin', age: 35, address: {street: 'mumbai', city: 'bang', pin: 75604}, cars: ['tata','honda','maruti']}
+        </script>
+    </body>
+</html>

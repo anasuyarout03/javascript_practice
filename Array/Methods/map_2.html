@@ -1,0 +1,25 @@
+<script>
+    var employees = [
+        { eId: 101, name: 'aaa',gender: 'male',sal: 7000,add: 'bbsr'},
+        { eId: 102, name: 'bbb',gender: 'female',sal: 8000,add: 'bls'},
+        { eId: 103, name: 'ccc',gender: 'male',sal: 9000,add:'mumbai'},
+        { eId: 104, name: 'ddd',gender: 'female',sal: 7500,add: 'delhi'},
+        { eId: 105, name: 'eee',gender: 'male',sal: 2200,add: 'odisha'}
+    ]
+
+    // without map()
+    let result = [];
+    for(emp of employees) {
+        const newObj = {};
+        newObj.eId = emp.eId;
+        newObj.sal = emp.sal;
+        result.push(newObj);
+    }
+    console.log(result);
+
+    // with map()
+    let result1 = employees.map((emp) => {
+        return { eId: emp.eId,sal: emp.sal};
+    });
+    console.log(result1);
+</script>

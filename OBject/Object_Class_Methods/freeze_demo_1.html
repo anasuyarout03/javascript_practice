@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <script>
+            // Nothing can be added to or removed from the properties set of a fozen object
+            // read-yes,update-no,delete-no
+
+            var Student = {
+                name: "Deepak",
+                age: 35,
+            };
+            console.log(Student);  //{name: 'Deepak', age: 35}
+
+            delete Student.age;
+            console.log(Student);    //{name: 'Deepak'}
+
+            var Employee = {
+                id: 101,
+                sal: 5000
+            };
+            console.log(Employee);   //{id: 101, sal: 5000}
+            Object.freeze(Employee);
+
+            delete Employee.sal;
+            console.log(Employee);   //{id: 101, sal: 5000}
+
+            Employee.sal = 6000;
+            console.log(Employee);   //{id: 101, sal: 5000}
+
+            Employee.add = "mumbai";
+            console.log(Employee);      //{id: 101, sal: 5000}
+
+            console.log(Object.isFrozen(Student),Object.isFrozen(Employee));     // false   true
+
+            let Employee2 = Employee;
+            console.log(Object.isFrozen(Employee),Object.isFrozen(Employee2));     // true   true
+
+            let Employee3 = Object.assign({}, Employee);
+            console.log(Object.isFrozen(Employee),Object.isFrozen(Employee3));     // true  false
+        </script>
+    </body>
+</html>

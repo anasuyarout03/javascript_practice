@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            /* function printUserDetails(user){
+                document.write(`Hello ${user.fname} ${user.lname} you are ${user.age} years old.You are from ${user.add} your DOB is ${user.dob}`)
+            } */
+
+            function printUserDetails({fName,age,add,dob,lName}){
+                document.write(`Hello ${fName} ${lName} you are ${age} years old.You are from ${add} your DOB is ${dob}`)
+            }
+
+            let user = {
+                fName: 'sachin',
+                lName: 'Tendulkar',
+                age: 35,
+                add: 'mmumbai',
+                dob: '12-03-2000'
+            }
+            printUserDetails(user);
+        </script>
+    </body>
+</html>

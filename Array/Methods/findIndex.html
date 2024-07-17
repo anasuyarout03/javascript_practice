@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        let cars = ["tata","honda","maruti","hundai"];
+        console.log(cars.indexOf("maruti"));     // 2
+
+        let employees = [
+            { eId: 101, name: "sanjay", sal: 5000 },
+            { eId: 102, name: "deepak", sal: 6000 },
+            { eId: 103, name: "ranjan", sal: 7000 },
+            { eId: 104, name: "manoj", sal: 8700 },
+            { eId: 105, name: "ramesh", sal: 5600 },
+        ];
+        // console.log(employees.indexOf({ eId: 102, name: "deepak",sal: 6000 }));
+
+        let ind = employees.findIndex((emp) => emp.sal === 6000);
+        console.log(ind);
+    </script>
+</body>
+
+</html>

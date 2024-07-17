@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            var arr = [10,15,22,25,39,18,32,13];
+            document.write("Array Before Filter: ", arr);
+
+            var evenArr = arr.filter(f1);   // filter-HO   f1-callback
+
+            function f1(ele) {
+                return ele % 2 == 0;
+            }
+
+            document.write("<br/> Array After Filter: ", evenArr);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+            let user = {
+                id:1,
+                name: 'Leanne Graham',
+                username: 'Bret',
+                email: 'Sincere@gmail.com',
+                address: {
+                    street: 'Kulas Light',
+                    suite: 'Apt. 556',
+                    city: 'Gesabiaccnb',
+                    zipcode: '937878-3891344',
+                    geo: {
+                        lat: '-67.7889',
+                        lng: '98.789',
+                    },
+                },
+                phone: '1-780-990-2766',
+                website: 'nsdabhohoiw.org',
+                company: {
+                    name: 'Ranksm-scvg',
+                    catchPhrase: 'Multi-layered client-server',
+                    bs: 'avdiucab acsbjb-ashcv',
+                },
+            }
+
+            //ES-5
+            let a = user.name;
+            let b = user.email;
+            let c = user.phone;
+            console.log(a,b,c);
+
+            //ES-6
+            let { name,email,phone } = user;
+            console.log(name,email,phone);
+        </script>
+    </body>
+</html>

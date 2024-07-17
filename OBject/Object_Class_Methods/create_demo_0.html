@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            let obj1 = { x: 10, y: 20 };
+            let obj2 = obj1;    // address copy
+            // address of obj1 is copied to obj2
+            // when obj1 is changed, obj2 will be affected & vice versa
+
+            console.log(obj1.x, obj1.y);
+            console.log(obj2.x, obj2.y);
+
+            obj1.x = 15;
+            console.log(obj1.x, obj1.y);  // 15 20
+            console.log(obj2.x, obj2.y);   // 15 20
+
+            obj2.y = 25;
+            console.log(obj1.x, obj1.y);  // 15 25
+            console.log(obj2.x, obj2.y);   // 15 25
+        </script>
+    </body>
+</html>

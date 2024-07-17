@@ -1,0 +1,18 @@
+<script>
+    const arr1 = [1,2,3,4,5,6];
+
+    // arr.fill(value,startInd,endInd)
+    arr1.fill(5,2,4);
+    console.log(arr1);      //[1, 2, 5, 5, 5, 6]
+
+    arr1.fill(5,2);
+    console.log(arr1);       //[1, 2, 5, 5, 5, 5]
+
+    arr1.fill(5);
+    console.log(arr1);       //[5, 5, 5, 5, 5, 5]
+
+    const arr2 = new Array(5);
+    console.log(arr2);       //[empty]
+    arr2.fill(10);
+    console.log(arr2);      //[10, 10, 10, 10, 10]
+</script>

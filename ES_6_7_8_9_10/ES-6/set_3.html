@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script>
+            let arr = [10,20,30,40,50,10,30,50];
+
+            let uniqueSet = new Set(arr);
+            console.log(uniqueSet, typeof uniqueSet);    // {10, 20, 30, 40, 50} 'object'
+
+            let uniqueArr = [...uniqueSet];
+            console.log(uniqueArr);             // [10,20,30,40,50]
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            var a = { x: 10, y: 20 };
+            document.writeln(typeof a);   // object
+            document.writeln(a.x);      // 10
+
+            document.writeln("<hr>");
+            
+            // JSON.stringfy() object to string
+            var b = JSON.stringify(a);
+            document.writeln(typeof b);  // string
+            document.writeln(b.x);       // undefined
+
+            document.writeln("<hr>");
+
+            // JSON.parse() string to object
+            var c = JSON.parse(b);
+            document.writeln(typeof c);    // object
+            document.writeln(c.x);     // 10
+        </script>
+    </body>
+</html>
